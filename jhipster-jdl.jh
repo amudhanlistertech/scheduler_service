@@ -1,0 +1,17 @@
+entity Patient{
+	patientId Long,
+    patientName String
+}
+entity Event{
+	worker String,
+    role String,
+    team String,
+    location String,
+    status String,
+    outcome String,
+    start LocalDate,
+    end LocalDate
+}
+relationship OneToOne{
+	Event{patient} to Patient
+}

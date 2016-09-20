@@ -1,0 +1,19 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "patientId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "patientName",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20160920072755",
+    "entityTableName": "patient",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

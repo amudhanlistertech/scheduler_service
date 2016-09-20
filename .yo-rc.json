@@ -1,0 +1,25 @@
+{
+  "generator-jhipster": {
+    "jhipsterVersion": "3.7.0",
+    "baseName": "schedulerservice",
+    "packageName": "com.amudhan.schedulerservice",
+    "packageFolder": "com/amudhan/schedulerservice",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "hibernateCache": "ehcache",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "no",
+    "buildTool": "maven",
+    "jwtSecretKey": "f78336e19c0cf2aa2c97726bacb67c3dbe215718",
+    "enableTranslation": false,
+    "applicationType": "microservice",
+    "testFrameworks": [
+      "cucumber"
+    ],
+    "jhiPrefix": "jhi",
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
