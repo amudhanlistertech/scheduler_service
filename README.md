@@ -1,6 +1,8 @@
 # schedulerservice
 Tools used: Eclipse with Maven
+
 To build : clean install
+
 To run: Run as -> Java Application -> SchedulerserviceApp
 
 #API
