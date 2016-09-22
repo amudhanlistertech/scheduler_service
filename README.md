@@ -1,37 +1,34 @@
 # schedulerservice
+Tools used: Eclipse with Maven
 
-This application was generated using JHipster, you can find documentation and help at [https://jhipster.github.io](https://jhipster.github.io).
+To build : clean install
 
-## Development
+To run: Run as -> Java Application -> SchedulerserviceApp
 
-Before you can build this project, you must install and configure the following dependencies on your machine:
+To run from the command line:
+java -jar target/*.war
 
+#API
+GET - http://127.0.0.1:8081/api/events/
 
-## Building for production
+GET - http://127.0.0.1:8081/api/events/{EVENTID}
 
-To optimize the schedulerservice client for production, run:
+POST - http://127.0.0.1:8081/api/events/
 
-    ./mvnw -Pprod clean package
+Sample POST DATA:
+```json
+{
+  "worker": "Great worker",
+  "role": "Another nurse",
+  "team": "Team",
+  "location": "Hospital",
+  "status": "Rescheduled",
+  "outcome": "Not completed",
+  "start": "2016-09-20",
+  "end": "2016-09-21"
+}
+````
+DELETE - http://127.0.0.1:8081/api/events/{EVENTID}
 
-To ensure everything worked, run:
+PUT - http://127.0.0.1:8081/api/events/
 
-    java -jar target/*.war
-    
-## Continuous Integration
-
-To setup this project in Jenkins, use the following configuration:
-
-* Project name: `schedulerservice`
-* Source Code Management
-    * Git Repository: `git@github.com:xxxx/schedulerservice.git`
-    * Branches to build: `*/master`
-    * Additional Behaviours: `Wipe out repository & force clone`
-* Build Triggers
-    * Poll SCM / Schedule: `H/5 * * * *`
-* Build
-    * Invoke Maven / Tasks: `-Pprod clean package`
-* Post-build Actions
-    * Publish JUnit test result report / Test Report XMLs: `build/test-results/*.xml`
-
-[JHipster]: https://jhipster.github.io/
-[Gatling]: http://gatling.io/
