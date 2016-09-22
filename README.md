@@ -5,6 +5,9 @@ To build : clean install
 
 To run: Run as -> Java Application -> SchedulerserviceApp
 
+To run from the command line:
+java -jar target/*.war
+
 #API
 GET - http://127.0.0.1:8081/api/events/
 
